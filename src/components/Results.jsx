@@ -1,4 +1,16 @@
+import { calculateInvestmentResults } from "../util/investment";
+
 export default function Results({ input }) {
-    console.log(input);
-    return <p>results...</p>;
+    const resultsData = calculateInvestmentResults(input);
+    console.log(resultsData);
+    return (
+        <table id="result">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+        </table>
+    );
 }
